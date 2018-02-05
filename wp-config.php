@@ -35,8 +35,8 @@ define('DB_CHARSET', 'utf8');
 /** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
 define('DB_COLLATE', '');
 
-define('WP_HOME', 'https://abacaxi-p3-api.herokuapp.com');
-define('WP_SITEURL', 'https://abacaxi-p3-api.herokuapp.com');
+define('WP_HOME', 'http://abacaxi-p3-api.herokuapp.com');
+define('WP_SITEURL', 'http://abacaxi-p3-api.herokuapp.com');
 
 /**#@+
  * Claves únicas de autentificación.
