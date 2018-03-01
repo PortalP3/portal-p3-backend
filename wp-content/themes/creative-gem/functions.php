@@ -7,7 +7,7 @@ add_action( 'rest_api_init', 'create_api_posts_meta_field' );
 function create_api_posts_meta_field() {
  
  // register_rest_field ( 'name-of-post-type', 'name-of-field-to-return', array-of-callbacks-and-schema() )
- register_rest_field( 'post', 'post-meta-fields', array(
+ register_rest_field( 'post', 'post_meta_fields', array(
  'get_callback' => 'get_post_meta_for_api',
  'schema' => null,
  )
