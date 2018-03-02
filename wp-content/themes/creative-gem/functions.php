@@ -17,9 +17,13 @@ function create_api_posts_meta_field() {
 function get_post_meta_for_api( $object ) {
  //get the id of the post object array
  $post_id = $object['id'];
+ $post_meta = get_post_meta( $post_id );
+
+ $response = new WP_REST_Response( $post_meta );
+ $response->header('Access-Control-Allow-Origin', '*');
  
  //return the post meta
- return get_post_meta( $post_id );
+ return $response;
 }
 /**
 * End expose post meta fields in rest API
