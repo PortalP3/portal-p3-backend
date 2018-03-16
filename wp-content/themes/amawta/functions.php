@@ -27,4 +27,3 @@
   function get_author_name( $object, $field_name, $request ) {
     return get_the_author_meta( 'display_name' );
   }
-?>
