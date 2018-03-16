@@ -17,13 +17,12 @@
   }
   
   function get_post_meta( $object ) {
-    //get the id of the post object array
     $post_id = $object['id'];
     
-    //return the post meta
     return get_post_meta( $post_id );
   }
 
   function get_author_name( $object, $field_name, $request ) {
     return get_the_author_meta( 'display_name' );
   }
+?>
