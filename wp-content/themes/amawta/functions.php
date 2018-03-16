@@ -4,7 +4,7 @@
   function create_api_posts_meta_field() {
     // Add rating info (it's inside post meta fields)
     register_rest_field( 'post', 'post_meta_fields', array(
-      'get_callback' => 'get_post_meta',
+      'get_callback' => 'get_post_meta_info',
       'schema' => null,
     ));
 
@@ -16,7 +16,7 @@
     ));
   }
   
-  function get_post_meta( $object ) {
+  function get_post_meta_info( $object ) {
     $post_id = $object['id'];
     
     return get_post_meta( $post_id );
